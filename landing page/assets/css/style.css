@@ -1,0 +1,405 @@
+:root {
+  --secundary-color: rgb(59, 59, 59);
+  --icons-color: #243a69;
+  --color: #191013;
+  --color2: #9aa4b5;
+  --color3: #2e3641;
+}
+
+* {
+  box-sizing: border-box;
+}
+body {
+  /* background: linear-gradient(-45deg, white, #2e3642); */
+  background: linear-gradient(-45deg, white,   #e3e3e3 );
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  background: linear-gradient(-45deg, rgb(255, 255, 255), rgb(234, 234, 234));
+  height: 15vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.menu-nav-ul {
+  display: flex;
+  align-items: center;
+}
+.menu-nav-ul li, 
+.menu-nav-ul a {
+  color: var(--icons-color);
+  list-style: none;
+  font-size: 2rem;
+  padding: 0.7rem 2rem;
+  margin: 0px 20px;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.menu-nav-ul li:hover {
+  background-color: rgb(220, 220, 220);
+  border-radius: 20px;
+}
+a:hover{
+  color: #0000ff;
+}
+.banner {
+  height: 20vh;
+  width: 100%;
+ 
+}
+
+img {
+  height: 100%;
+}
+
+.container-width {
+  width: 1375px;
+  margin: 0 auto;
+}
+.max-width {
+  margin: 0 auto;
+  width: 1300px;
+  width: 100%;
+  background-color: var(--color3);
+}
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  margin-bottom: 1rem;
+  width: 1375px;
+}
+
+#imagem,
+#imagem-2,
+#imagem-ps5 {
+  background-position: center;
+  background-size: cover;
+  height: 500px;
+  width: 500px;
+}
+/* Seção PS5*/
+
+.main,
+.jogos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.animated-border {
+  width: 100%;
+  background: #ffbb00;
+  position: absolute;
+  animation: rotate 3s infinite ease-in-out;
+}
+.corner {
+  
+  background: #100;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.content {
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+  position: relative;
+  background: rgb(36, 36, 36);
+  box-shadow: 16px 14px 20px #0000008c;
+  border-radius: 20px;
+  width: 1375px;
+  height: 723px;
+}
+.content::before {
+  content: "";
+  position: absolute;
+  width: 1375px;
+  height: 720px;
+  background: linear-gradient(
+    #000524,
+    #010937,
+    #020f59,
+    #101f78,
+    #1c31a5,
+    #36cecc,
+    #ffffff
+  );
+  animation: anima 5s linear infinite;
+}
+@keyframes anima {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.content::after {
+  content: "";
+  position: absolute;
+  inset: 4px;
+  border-radius: 20px;
+  background: linear-gradient(-45deg, white, #2e3642);
+}
+.imagem-ps5 {
+  flex: 1;
+  height: 703px;
+  width: calc(100% - 50px);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  z-index: 10;
+}
+
+.desc-tecnica {
+  flex: 1;
+  padding: 10px;
+  position: relative;
+  z-index: 10;
+}
+
+.card-ps5 {
+  flex: 1;
+  padding: 0px 1rem;
+  border: 1px solid darkgrey;
+  background: linear-gradient(105deg, #9aa4b5, #2e3641);
+}
+
+.titulo {
+  font-size: 1rem;
+  color: var(--color);
+}
+
+.descr p {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin: 0px;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+}
+
+.gradient {
+  background-image: linear-gradient(
+    to bottom,
+    rgb(0, 0, 0),
+    rgb(0, 38, 255),
+    rgb(3, 3, 3)
+  );
+  color: rgb(0, 8, 255);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.container-gallery {
+  margin-top: 11rem;
+  margin-bottom: 10rem;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 3px;
+  background-color: #F2F2F2;
+}
+
+.container-gallery img {
+  height: 220px;
+}
+
+.gallery-2 img {
+  width: auto;
+  transform: rotate(-20deg);
+ 
+}
+.control img {
+  display: flex;
+  align-self: flex-end;
+  height: 300px;
+}
+
+/* SEÇÃO DE INFORMAÇÕES*/
+
+.informacoes {
+  padding-top: 1rem;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 2rem !important;
+  flex-wrap: wrap;
+  margin-bottom: 12rem; 
+}
+.informacoes-icones {
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: space-between;
+}
+.informacoes-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.informacoes-card i,
+p {
+  font-size: 2rem;
+}
+.info-text {
+  color: var(--color);
+}
+i {
+  background-image: linear-gradient(
+    to bottom,
+    var(--color3),
+    rgb(0, 0, 0),
+    var(--color2)
+  );
+  color: rgb(0, 8, 255);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.line {
+  height: 4px;
+  width: 100%;
+  background-color: var(--secundary-color);
+  border-radius: 5px;
+}
+.informacoes-desc {
+  color: var(--secundary-color);
+  text-align: center;
+}
+.controle-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.card-controle {
+  display: flex;
+  flex: 1;
+  /* gap: 2rem; */
+  width: 100%;
+  gap: 2rem;
+  
+}
+
+.controle-card-info,
+.controle-card-img {
+  width: 680px;
+  margin-bottom: 2rem;
+}
+.controle-card-info{
+  padding: 20px;
+}
+
+
+.card-controle img {
+  height: 100%;
+  width: 100%;
+  border-radius: 20px;
+}
+.v-video{
+  display: flex;
+  justify-content: center;
+  border-radius: 20px;
+  height: 65vh;
+  align-items: center;
+  background-color: #F2F2F2;
+}
+.v-video img{
+  height: 100%;
+}
+/* Seção de jogos*/
+.jogos h2 {
+  text-align: center;
+  margin-top: 3rem;
+}
+
+#imagem {
+  background-image: url("../img/wp6802959-ps5-4k-pictures-wallpapers.jpg");
+}
+#imagem-2 {
+  background-image: url('../img/gost.jpg');
+}
+
+.text-figure {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-position: top;
+  background-size: cover;
+  padding: 10px;
+}
+.text-figure p {
+  background-image: linear-gradient(
+    to bottom,
+    rgb(0, 0, 0),
+    rgb(255, 255, 255),
+    rgb(3, 3, 3)
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 1.3rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+#spider {
+  background-image: url("../img/logo-fundo.jpg");
+}
+#spider:hover {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../img/logo-fundo.jpg");
+}
+
+#logo-ghost {
+  background-image: url("../img/logo-ghost.jpg");
+}
+#logo-ghost:hover {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../img/logo-ghost.jpg");
+}
+
+.figure {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  height: 90%;
+}
+.card-fig {
+  height: 200px;
+}
+.card-fig img {
+  border-radius: 25px;
+  height: 100%;
+  border: 2px solid rgb(99, 99, 99);
+}
+.card-fig img:hover {
+  border: 2px solid rgb(255, 184, 3);
+  box-shadow: 1px 1px 10px darkgoldenrod;
+}
+
+#ghost img:hover {
+  border: 2px solid rgb(255, 0, 0);
+  box-shadow: 1px 1px 10px rgb(255, 0, 0);
+}
