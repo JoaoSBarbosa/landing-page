@@ -486,16 +486,16 @@ i:hover {
   height: 100%;
   border: 2px solid rgb(99, 99, 99);
 }
-.card-fig img:hover {
+.card-fig video:hover {
   border: 2px solid rgb(255, 184, 3);
   box-shadow: 1px 1px 10px darkgoldenrod;
 }
 
-#ghost img:hover {
+#ghost video:hover {
   border: 2px solid rgb(255, 0, 0);
   box-shadow: 1px 1px 10px rgb(255, 0, 0);
 }
-#thelast img:hover {
+#thelast video:hover {
   border: 2px solid rgb(90, 60, 0);
   box-shadow: 1px 1px 10px rgb(90, 60, 0);
 }
